@@ -1,27 +1,38 @@
-# VidaSuprema
+# Vida suprema 
+by [@LeoUrzua](https://www.linkedin.com/in/diego-l-urzua) and nadien
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+Coming soon: live implementation: [www.vidasuprema.com](www.vidasuprema.com) 
+ 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Commands
+  * `npm start` - starts a dev server and opens browser with running app
+  * `npm run test` - runs lint and tests
+  * `npm run watch` - runs tests in watch mode
+  * `npm run prod` - runs full prod build and serves prod bundle
+  * `npm run prettier` - runs prettier to format whole code base (`.ts` and `.scss`) 
+  * `npm run analyze` - runs full prod build and `webpack-bundle-analyzer` to visualize how much code is shipped (dependencies & application) 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* custom themes support (3 themes included)
+* lazy-loading of feature modules
+* lazy reducers
+* localStorage ui state persistence
+* `@ngrx/effects` for API requests
+* fully responsive design
+* angular-material and custom components in `SharedModule`
+ 
+## Stack
 
-## Running unit tests
+* Angular
+* ngrx (or try [ngx-model](https://github.com/tomastrajan/ngx-model) if you prefer less boilerplate)
+* Angular Material
+* Bootstrap 4 (only reset, utils and grids)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### Acknowledgements
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Built with and uses [Angular CLI](https://github.com/angular/angular-cli)

@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+
+@mixin supreme-stock-market-component-theme($theme) {
+  $warn: map-get($theme, warn);
+
+  supreme-stock-market {
+    mat-card {
+      span {
+        &.negative {
+          color: mat-color($warn);
+        }
+      }
+    }
+
+    .error {
+      i {
+        color: mat-color($warn);
+      }
+    }
+  }
+}

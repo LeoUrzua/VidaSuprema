@@ -1,5 +1,5 @@
-$anms-primary: mat-palette($mat-indigo, 800, 300, 900);
-$anms-accent: mat-palette($mat-light-blue);
-$anms-warn: mat-palette($mat-pink, 600);
+$supreme-primary: mat-palette($mat-indigo, 800, 300, 900);
+$supreme-accent: mat-palette($mat-light-blue);
+$supreme-warn: mat-palette($mat-pink, 600);
 
-$anms-theme: mat-light-theme($anms-primary, $anms-accent, $anms-warn);
+$supreme-theme: mat-light-theme($supreme-primary, $supreme-accent, $supreme-warn);
