@@ -6,8 +6,10 @@
   <!--<mat-card>List of articles -> single article</mat-card>-->
 
   <div *ngFor="let article of articles" [ngClass]="animateOnRouteEnter">
-    <mat-card style="margin-top: 2%; margin-top: 2%">
-      <h1>{{article.title}}</h1>
+    <mat-card style="margin-top: 2%; margin-bottom: 2%">
+      <a routerLink="/i/{{article.id}}">
+          <h1>{{article.title}}</h1>
+      </a>
       <img [src]=article.imageURL>
     </mat-card>
 

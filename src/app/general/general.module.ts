@@ -6,6 +6,7 @@ import { GeneralComponent } from './general/general.component';
 import { HomeComponent } from './home/home.component';
 import { SingleArticleComponent } from './single-article/single-article.component';
 import { SharedModule } from '@app/shared';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
 
 
 @NgModule({
@@ -14,6 +15,6 @@ import { SharedModule } from '@app/shared';
     CommonModule,
     GeneralRoutingModule
   ],
-  declarations: [GeneralComponent, HomeComponent, SingleArticleComponent]
+  declarations: [GeneralComponent, HomeComponent, SingleArticleComponent, ArticleDetailComponent]
 })
 export class GeneralModule { }
