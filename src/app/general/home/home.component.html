@@ -1,19 +1,4 @@
 <div class="container">
-  <!--<mat-card><supreme-single-article></supreme-single-article></mat-card>-->
-
-  <!--<h2>TODOS: </h2>-->
-  <!--<mat-card>display a list of Articles</mat-card>-->
-  <!--<mat-card>List of articles -> single article</mat-card>-->
-
-  <div *ngFor="let article of articles" [ngClass]="animateOnRouteEnter">
-    <mat-card style="margin-top: 2%; margin-bottom: 2%">
-      <a routerLink="/i/{{article.id}}">
-          <h1>{{article.title}}</h1>
-      </a>
-      <img [src]=article.imageURL>
-    </mat-card>
-
-
-  </div>
+  <supreme-article-list></supreme-article-list>
 </div>
 

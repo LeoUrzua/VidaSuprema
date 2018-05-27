@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -7,13 +7,16 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./article-detail.component.css']
 })
 export class ArticleDetailComponent implements OnInit {
-  article = {};
+  // article: any;
+  @Input('article') article: any;
   constructor(
     private route: ActivatedRoute
   ) { }
 
   ngOnInit() {
-    this.getArticle();
+    if (this.route.snapshot.paramMap.get('id') != null) {
+      this.getArticle();
+    }
   }
 
   private getArticle() {
