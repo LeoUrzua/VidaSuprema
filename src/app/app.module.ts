@@ -10,6 +10,7 @@ import { StaticModule } from './static';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GeneralModule } from '@app/general/general.module';
 
 @NgModule({
   imports: [
@@ -20,6 +21,7 @@ import { AppComponent } from './app.component';
     // core & shared
     CoreModule,
     SharedModule,
+    GeneralModule,
 
     // features
     StaticModule,

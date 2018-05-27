@@ -6,7 +6,8 @@ import { SettingsComponent } from './settings';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'about',
+    // redirectTo: 'about',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {

@@ -34,6 +34,7 @@ export class AppComponent implements OnInit, OnDestroy {
   logo = require('../assets/logo.png');
   // Add new navbar links here
   navigation = [
+    { link: 'home', label: 'Home'},
     { link: 'about', label: 'About' },
     { link: 'features', label: 'Features' },
     // { link: 'examples', label: 'Examples' }
