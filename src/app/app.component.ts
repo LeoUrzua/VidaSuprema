@@ -3,7 +3,6 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 import { Component, HostBinding, OnDestroy, OnInit } from '@angular/core';
 import { ActivationEnd, Router, NavigationEnd } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { Subject } from 'rxjs';
 import { takeUntil, filter } from 'rxjs/operators';
 
 import {
@@ -15,6 +14,7 @@ import {
 import { environment as env } from '@env/environment';
 
 import { NIGHT_MODE_THEME, selectorSettings, SettingsState } from './settings';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'supreme-root',
@@ -24,6 +24,7 @@ import { NIGHT_MODE_THEME, selectorSettings, SettingsState } from './settings';
 })
 export class AppComponent implements OnInit, OnDestroy {
   private unsubscribe$: Subject<void> = new Subject<void>();
+
 
   @HostBinding('class') componentCssClass;
 
@@ -37,6 +38,7 @@ export class AppComponent implements OnInit, OnDestroy {
     { link: 'home', label: 'Home'},
     { link: 'about', label: 'About' },
     { link: 'features', label: 'Features' },
+    { link: 'admin', label: 'Admin' },
     // { link: 'examples', label: 'Examples' }
   ];
   navigationSideMenu = [
@@ -49,7 +51,8 @@ export class AppComponent implements OnInit, OnDestroy {
     public overlayContainer: OverlayContainer,
     private store: Store<any>,
     private router: Router,
-    private titleService: Title
+    private titleService: Title,
+    // private breakpointObserver: BreakpointObserver
   ) {}
 
   ngOnInit(): void {

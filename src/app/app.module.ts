@@ -11,6 +11,9 @@ import { StaticModule } from './static';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GeneralModule } from '@app/general/general.module';
+import { AdminModule } from '@app/admin/admin.module';
+import { Router } from '@angular/router';
+
 
 @NgModule({
   imports: [
@@ -22,16 +25,22 @@ import { GeneralModule } from '@app/general/general.module';
     CoreModule,
     SharedModule,
     GeneralModule,
+    AdminModule,
 
     // features
     StaticModule,
     SettingsModule,
 
     // app
-    AppRoutingModule
+    AppRoutingModule,
   ],
   declarations: [AppComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  // Diagnostic only: inspect router conf
+  constructor(router: Router) {
+    console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
+  }
+}

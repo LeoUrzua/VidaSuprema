@@ -1,7 +1,14 @@
 <mat-sidenav-container>
 
-  <mat-sidenav #sidenav mode="push">
-    <div class="branding"><img [src]="logo"/> <span>Angular Starter</span></div>
+  <mat-sidenav #sidenav mode="push" >
+               <!--#drawer-->
+               <!--class="sidenav"-->
+               <!--fixedInViewport="true"-->
+               <!--[attr.role]="isHandset ? 'dialog' : 'navigation'"-->
+               <!--[mode]="(isHandset | async)!.matches ? 'over' : 'side'"-->
+               <!--[opened]="!(isHandset | async)!.matches"-->
+  <!--&gt;-->
+    <div class="branding"><img [src]="logo"/> <span>Vida Suprema</span></div>
     <mat-nav-list>
       <a mat-list-item *ngFor="let item of navigationSideMenu" (click)="sidenav.close()"
          [routerLink]="[item.link]" routerLinkActive="active">
@@ -27,7 +34,7 @@
           <img [src]="logo"/></span>
         <span routerLink=""
               class="branding spacer center d-none d-sm-inline d-md-none"><img
-          [src]="logo"/> Angular Starter</span>
+          [src]="logo"/> Vida Suprema</span>
         <span routerLink="" class="branding spacer d-none d-md-inline"><img
           [src]="logo"/> Vida Suprema</span>
 

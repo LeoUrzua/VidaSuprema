@@ -2,13 +2,24 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { SettingsComponent } from './settings';
+import { HomeComponent } from '@app/general/home/home.component';
 
 const routes: Routes = [
   {
     path: '',
-    // redirectTo: 'about',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+    data: {
+      title: 'Home'
+    }
+  },
+  {
+    path: 'admin',
+    loadChildren: 'app/admin/admin.module#AdminModule',
   },
   {
     path: 'settings',
@@ -28,8 +39,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  // useHash supports github.io demo page, remove in your app
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(
+    routes,
+    {enableTracing: true} //  <- debugging purposes only
+    )],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

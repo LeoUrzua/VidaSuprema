@@ -21,6 +21,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BigInputComponent } from './big-input/big-input.component';
 import { BigInputActionComponent } from './big-input/big-input-action.component';
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -40,7 +41,7 @@ import { BigInputActionComponent } from './big-input/big-input-action.component'
     MatMenuModule,
     MatIconModule,
     MatTooltipModule,
-    MatSnackBarModule
+
   ],
   declarations: [BigInputComponent, BigInputActionComponent],
   exports: [
@@ -48,17 +49,16 @@ import { BigInputActionComponent } from './big-input/big-input-action.component'
     FormsModule,
 
     MatButtonModule,
-    MatMenuModule,
+    MatToolbarModule,
+    MatSelectModule,
     MatTabsModule,
-    MatChipsModule,
     MatInputModule,
     MatProgressSpinnerModule,
-    MatCheckboxModule,
+    MatChipsModule,
     MatCardModule,
     MatSidenavModule,
     MatListModule,
-    MatSelectModule,
-    MatToolbarModule,
+    MatMenuModule,
     MatIconModule,
     MatTooltipModule,
     MatSnackBarModule,

@@ -8,6 +8,8 @@ import { SingleArticleComponent } from './single-article/single-article.componen
 import { SharedModule } from '@app/shared';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { ArticleListComponent } from './article-list/article-list.component';
+import { ArtComponent } from './art/art.component';
+import { ArtOneComponent } from './art-one/art-one.component';
 
 
 @NgModule({
