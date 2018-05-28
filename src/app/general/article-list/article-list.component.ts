@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Article } from '@app/interfaces/article';
 
 @Component({
   selector: 'supreme-article-list',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ArticleListComponent implements OnInit {
 
-  @Input() article: any;
+  @Input() article: Article;
   articles = [
     {
       id: 1,

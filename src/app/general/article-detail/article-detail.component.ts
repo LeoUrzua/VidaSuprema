@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Article } from '@app/interfaces/article';
 
 @Component({
   selector: 'supreme-article-detail',
@@ -8,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ArticleDetailComponent implements OnInit {
   // article: any;
-  @Input('article') article: any;
+  @Input('article') article: Article;
   constructor(
     private route: ActivatedRoute
   ) { }
