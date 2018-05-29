@@ -4,9 +4,11 @@ import { CommonModule } from '@angular/common';
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin/admin.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
-import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatListModule } from '@angular/material';
+import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { UsersComponent } from '@app/admin/adminUsers/users/users.component';
+import { UsersTableComponent } from './adminUsers/users-table/users-table.component';
 
 @NgModule({
   imports: [
@@ -20,8 +22,11 @@ import { LayoutModule } from '@angular/cdk/layout';
     LayoutModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
-  declarations: [AdminComponent, AdminDashboardComponent, AdminNavbarComponent]
+  declarations: [AdminComponent, AdminDashboardComponent, AdminNavbarComponent, UsersComponent, UsersTableComponent]
 })
 export class AdminModule { }
