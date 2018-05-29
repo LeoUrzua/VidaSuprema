@@ -4,6 +4,7 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminDashboardComponent } from '@app/admin/admin-dashboard/admin-dashboard.component';
 import { AdminHomeComponent } from '@app/admin/admin-home/admin-home.component';
 import { UsersComponent } from '@app/admin/adminUsers/users/users.component';
+import { PostsComponent } from '@app/admin/adminPosts/posts/posts.component';
 
 
 const adminRoutes: Routes = [
@@ -18,6 +19,7 @@ const adminRoutes: Routes = [
         children: [
           { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
           { path: 'users', component: UsersComponent},
+          { path: 'posts', component: PostsComponent},
           { path: 'dashboard', component: AdminDashboardComponent},
           // { path: '', component: AdminComponent },
         ]
