@@ -13,6 +13,8 @@ import { AppComponent } from './app.component';
 import { GeneralModule } from '@app/general/general.module';
 import { AdminModule } from '@app/admin/admin.module';
 import { Router } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { PostService } from '@app/services/post.service';
 
 
 @NgModule({
@@ -33,9 +35,12 @@ import { Router } from '@angular/router';
 
     // app
     AppRoutingModule,
+    HttpClientModule
   ],
   declarations: [AppComponent],
-  providers: [],
+  providers: [
+    PostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
