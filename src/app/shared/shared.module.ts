@@ -17,9 +17,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { BigInputComponent } from './big-input/big-input.component';
 import { BigInputActionComponent } from './big-input/big-input-action.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import { BigInputActionComponent } from './big-input/big-input-action.component'
     MatMenuModule,
     MatIconModule,
     MatTooltipModule,
-
+    MatGridListModule,
+    FlexLayoutModule
   ],
   declarations: [BigInputComponent, BigInputActionComponent],
   exports: [
@@ -62,9 +65,10 @@ import { BigInputActionComponent } from './big-input/big-input-action.component'
     MatIconModule,
     MatTooltipModule,
     MatSnackBarModule,
-
+    MatGridListModule,
     BigInputComponent,
-    BigInputActionComponent
+    BigInputActionComponent,
+    FlexLayoutModule
   ]
 })
 export class SharedModule {}
