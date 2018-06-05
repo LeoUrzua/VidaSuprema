@@ -1,6 +1,12 @@
 <div class="container">
   <mat-card style="margin-top: 2%; margin-bottom: 2%">
-      <a routerLink="/i/{{article.id}}"><h1>{{article.title}}</h1></a>
-    <img [src]=article.imageURL>
+      <mat-card-title>
+          <a routerLink="/i/{{article.id}}"><h3>{{article.title}}</h3></a>
+      </mat-card-title>
+      <mat-card-content>
+          <div fxFlex="80%">
+              <img mat-card-image  alt="{{article.title}}" [src]=article.imageURL>
+          </div>
+      </mat-card-content>
   </mat-card>
 </div>

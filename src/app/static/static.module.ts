@@ -8,6 +8,6 @@ import { FeaturesComponent } from './features/features.component';
 
 @NgModule({
   imports: [SharedModule, StaticRoutingModule],
-  declarations: [AboutComponent, FeaturesComponent]
+  declarations: [AboutComponent, FeaturesComponent, ]
 })
 export class StaticModule {}
