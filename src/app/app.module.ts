@@ -46,6 +46,6 @@ import { PostService } from '@app/services/post.service';
 export class AppModule {
   // Diagnostic only: inspect router conf
   constructor(router: Router) {
-    console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
+    // console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
   }
 }
