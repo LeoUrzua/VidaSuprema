@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit,  ViewContainerRef  } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Article } from '@app/interfaces/article';
+import { AdsComponent } from '../ads/ads.component';
 
 @Component({
   selector: 'supreme-article-detail',
@@ -9,12 +10,18 @@ import { Article } from '@app/interfaces/article';
 })
 export class ArticleDetailComponent implements OnInit {
   // article: any;
+  isHome: boolean;
   @Input('article') article: Article;
   constructor(
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    public viewContainerRef: ViewContainerRef
   ) { }
 
   ngOnInit() {
+    this.isHome  = this.route.snapshot.url[0].path != "home";
+    if(this.isHome)
+      this.isHome = true;
+
     if (this.route.snapshot.paramMap.get('id') != null) {
       this.getArticle();
     }

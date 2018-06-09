@@ -10,6 +10,7 @@ import { ArticleDetailComponent } from './article-detail/article-detail.componen
 import { ArticleListComponent } from './article-list/article-list.component';
 import { ArtComponent } from './art/art.component';
 import { ArtOneComponent } from './art-one/art-one.component';
+import { AdsComponent } from './ads/ads.component';
 
 
 @NgModule({
@@ -18,6 +19,6 @@ import { ArtOneComponent } from './art-one/art-one.component';
     CommonModule,
     GeneralRoutingModule
   ],
-  declarations: [GeneralComponent, HomeComponent, SingleArticleComponent, ArticleDetailComponent, ArticleListComponent]
+  declarations: [GeneralComponent, HomeComponent, SingleArticleComponent, ArticleDetailComponent, ArticleListComponent, AdsComponent]
 })
 export class GeneralModule { }
