@@ -22,6 +22,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { BigInputComponent } from './big-input/big-input.component';
 import { BigInputActionComponent } from './big-input/big-input-action.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { MatFormFieldModule } from '@angular/material';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatIconModule,
     MatTooltipModule,
     MatGridListModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatFormFieldModule
   ],
   declarations: [BigInputComponent, BigInputActionComponent],
   exports: [
