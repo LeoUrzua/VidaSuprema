@@ -17,19 +17,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostService } from '@app/services/post.service';
 
 
-// import { AngularFireModule } from 'angularfire2';
-// import { environment } from '../environments/environment';
-//
-// import { AngularFirestoreModule } from 'angularfire2/firestore';
-// import { AngularFireAuthModule } from 'angularfire2/auth';
-//
-// import { firebaseConfig } from '../env';
-
 import { AngularFireModule } from 'angularfire2';
-import { environment } from '../environments/environment';
+import { environment } from '@env/environment';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireStorageModule } from 'angularfire2/storage';
+import { UsersModule } from '@app/users/users.module';
 
 
 
@@ -44,6 +37,7 @@ import { AngularFireStorageModule } from 'angularfire2/storage';
     SharedModule,
     GeneralModule,
     AdminModule,
+    UsersModule,
 
     // API
     AngularFireModule.initializeApp(environment.firebase),
@@ -68,6 +62,6 @@ import { AngularFireStorageModule } from 'angularfire2/storage';
 export class AppModule {
   // Diagnostic only: inspect router conf
   constructor(router: Router) {
-    // console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
+    console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
   }
 }

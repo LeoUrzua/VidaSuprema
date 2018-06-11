@@ -22,6 +22,10 @@ const routes: Routes = [
     loadChildren: 'app/admin/admin.module#AdminModule',
   },
   {
+    path: 'users',
+    loadChildren: 'app/users/users.module#UsersModule',
+  },
+  {
     path: 'settings',
     component: SettingsComponent,
     data: {
