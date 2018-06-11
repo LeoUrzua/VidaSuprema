@@ -1,12 +1,22 @@
-<div class="container">
-  <mat-card style="margin-top: 2%; margin-bottom: 2%">
-      <mat-card-title>
-          <a routerLink="/i/{{article.id}}"><h3>{{article.title}}</h3></a>
-      </mat-card-title>
-      <mat-card-content>
-          <div fxFlex="80%">
-              <img mat-card-image  alt="{{article.title}}" [src]=article.imageURL>
-          </div>
-      </mat-card-content>
-  </mat-card>
+<div class="container" style="margin-top: 1%; margin-bottom: 2%">
+  <div fxLayout="row" fxLayoutAlign="left stretch" class="row-example" >
+    <div fxFlex="100">
+      <mat-card style="margin-top: 1%; margin-bottom: 2%">
+          <mat-card-title>
+              <a routerLink="/i/{{article.id}}"><h3>{{article.title}}</h3></a>
+          </mat-card-title>
+          <mat-card-content>
+              <div fxFlex="90%">
+                  <img mat-card-image  alt="{{article.title}}" [src]=article.imageURL>
+              </div>
+          </mat-card-content>
+      </mat-card>
+    </div>
+    <div style="margin-top: 0.7%; margin-bottom: 1%" fxFlex="30"  *ngIf="isHome">
+      <mat-card >
+        <supreme-ads ></supreme-ads>
+        <supreme-ads></supreme-ads>
+      </mat-card>
+    </div>
+  </div>
 </div>
