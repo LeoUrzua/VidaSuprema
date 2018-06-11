@@ -1,3 +1,15 @@
-<p>
-  user-login works!
-</p>
+<div class="container">
+  <!--<div *ngIf="auth.user$ | async; then authenticated else guest">-->
+  <div *ngIf="false | async; then authenticated else guest">
+    <!-- template will replace this div -->
+  </div>
+  <ng-template #guest>
+    <h1>Hello visitor</h1>
+    <p>Please login to get started</p>
+  </ng-template>
+
+
+  <ng-template #authenticated>
+    <h1>Hello user</h1>
+  </ng-template>
+</div>
