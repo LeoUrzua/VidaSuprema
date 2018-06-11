@@ -15,6 +15,11 @@ import { AdminModule } from '@app/admin/admin.module';
 import { Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { PostService } from '@app/services/post.service';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireStorageModule } from 'angularfire2/storage';
+
+import { environment } from '@env/firebaseConfig';
+export const firebaseConfig = environment.firebaseConfig;
 
 
 @NgModule({
@@ -28,6 +33,10 @@ import { PostService } from '@app/services/post.service';
     SharedModule,
     GeneralModule,
     AdminModule,
+
+    // API
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireStorageModule,
 
     // features
     StaticModule,

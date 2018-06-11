@@ -34,3 +34,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+# Private keys
+
+/src/environments/firebaseConfig.ts
