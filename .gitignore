@@ -39,3 +39,4 @@ Thumbs.db
 # Private keys
 
 /src/environments/firebaseConfig.ts
+/src/environments/environment.ts

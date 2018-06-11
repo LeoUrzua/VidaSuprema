@@ -18,5 +18,13 @@ export const environment = {
     rxjs: packageJson.dependencies.rxjs,
     angularCli: packageJson.devDependencies['@angular/cli'],
     typescript: packageJson.devDependencies['typescript']
+  },
+  firebase: {
+    apiKey: 'AIzaSyCQItyJS29-UCqoJVHqJvWVWz73u3Wms0U',
+    authDomain: 'vida-suprema.firebaseapp.com',
+    databaseURL: 'https://vida-suprema.firebaseio.com',
+    projectId: 'vida-suprema',
+    storageBucket: 'vida-suprema.appspot.com',
+    messagingSenderId: '154343004158'
   }
 };
