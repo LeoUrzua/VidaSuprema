@@ -6,6 +6,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { UserBaseComponent } from './user-base/user-base.component';
 import { SharedModule } from '../shared';
 import { AuthService } from '@app/users/auth.service';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,7 @@ import { AuthService } from '@app/users/auth.service';
     SharedModule,
     UsersRoutingModule
   ],
-  declarations: [UserLoginComponent, UserBaseComponent],
+  declarations: [UserLoginComponent, UserBaseComponent, UserProfileComponent],
   providers: [AuthService]
 })
 export class UsersModule { }

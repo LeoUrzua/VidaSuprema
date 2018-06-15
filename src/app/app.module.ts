@@ -23,6 +23,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { UsersModule } from '@app/users/users.module';
+import { AngularFireFunctionsModule } from 'angularfire2/functions';
 
 
 
@@ -44,6 +45,9 @@ import { UsersModule } from '@app/users/users.module';
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
+    AngularFireFunctionsModule,
+
+
 
     // features
     StaticModule,
@@ -62,6 +66,6 @@ import { UsersModule } from '@app/users/users.module';
 export class AppModule {
   // Diagnostic only: inspect router conf
   constructor(router: Router) {
-    console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
+    // console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
   }
 }
