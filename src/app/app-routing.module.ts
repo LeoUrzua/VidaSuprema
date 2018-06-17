@@ -26,6 +26,10 @@ const routes: Routes = [
     loadChildren: 'app/users/users.module#UsersModule',
   },
   {
+    path: 'blog',
+    loadChildren: 'app/blog/blog.module#BlogModule',
+  },
+  {
     path: 'settings',
     component: SettingsComponent,
     data: {

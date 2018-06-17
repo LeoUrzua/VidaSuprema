@@ -36,6 +36,7 @@ export class AppComponent implements OnInit, OnDestroy {
   // Add new navbar links here
   navigation = [
     { link: 'home', label: 'Home'},
+    { link: 'blog', label: 'Blog'},
     { link: 'about', label: 'About' },
     { link: 'features', label: 'Features' },
     { link: 'admin', label: 'Admin' },
