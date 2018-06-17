@@ -15,7 +15,7 @@ import { AdminModule } from '@app/admin/admin.module';
 import { Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { PostService } from '@app/services/post.service';
-
+import { BlogModule } from '@app/blog/blog.module';
 
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '@env/environment';
@@ -38,6 +38,7 @@ import { UsersModule } from '@app/users/users.module';
     GeneralModule,
     AdminModule,
     UsersModule,
+    BlogModule,
 
     // API
     AngularFireModule.initializeApp(environment.firebase),
