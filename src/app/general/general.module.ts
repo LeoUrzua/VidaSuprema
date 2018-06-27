@@ -10,15 +10,13 @@ import { ArticleDetailComponent } from './article-detail/article-detail.componen
 import { ArticleListComponent } from './article-list/article-list.component';
 import { ArtComponent } from './art/art.component';
 import { ArtOneComponent } from './art-one/art-one.component';
-import { AdsComponent } from './ads/ads.component';
-
 
 @NgModule({
   imports: [
     SharedModule,
     CommonModule,
-    GeneralRoutingModule
+    GeneralRoutingModule,
   ],
-  declarations: [GeneralComponent, HomeComponent, SingleArticleComponent, ArticleDetailComponent, ArticleListComponent, AdsComponent]
+  declarations: [GeneralComponent, HomeComponent, SingleArticleComponent, ArticleDetailComponent, ArticleListComponent]
 })
 export class GeneralModule { }

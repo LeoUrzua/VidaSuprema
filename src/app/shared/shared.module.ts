@@ -23,7 +23,7 @@ import { BigInputComponent } from './big-input/big-input.component';
 import { BigInputActionComponent } from './big-input/big-input-action.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { MatFormFieldModule } from '@angular/material';
-
+import { AdsComponent } from '../ads/ads.component';
 
 
 @NgModule({
@@ -49,7 +49,7 @@ import { MatFormFieldModule } from '@angular/material';
     FlexLayoutModule,
     MatFormFieldModule
   ],
-  declarations: [BigInputComponent, BigInputActionComponent],
+  declarations: [BigInputComponent, BigInputActionComponent, AdsComponent],
   exports: [
     CommonModule,
     FormsModule,
@@ -71,7 +71,8 @@ import { MatFormFieldModule } from '@angular/material';
     MatGridListModule,
     BigInputComponent,
     BigInputActionComponent,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AdsComponent
   ]
 })
 export class SharedModule {}
