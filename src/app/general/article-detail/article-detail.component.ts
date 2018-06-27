@@ -1,7 +1,6 @@
 import { Component, Input, OnInit,  ViewContainerRef  } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Article } from '@app/interfaces/article';
-import { AdsComponent } from '../ads/ads.component';
 
 @Component({
   selector: 'supreme-article-detail',
