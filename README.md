@@ -2,6 +2,7 @@
 by [@LeoUrzua](https://www.linkedin.com/in/diego-l-urzua) and nadien
 
 Coming soon: live implementation: [www.vidasuprema.com](www.vidasuprema.com) 
+please feel free to contact us we are looking for more collaborators
  
 
 
