@@ -7,7 +7,7 @@ Coming soon: live implementation: [www.vidasuprema.com](www.vidasuprema.com)
 
 
 ## Commands
-  * `npm start` - starts a dev server and opens browser with running app
+  * `npm start`  - starts a dev server and opens browser with running app
   * `npm run test` - runs lint and tests
   * `npm run watch` - runs tests in watch mode
   * `npm run prod` - runs full prod build and serves prod bundle
