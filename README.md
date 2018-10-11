@@ -37,3 +37,4 @@ please feel free to contact us we are looking for more collaborators
 ### Acknowledgements
 
 Built with and uses [Angular CLI](https://github.com/angular/angular-cli)
+Create with Manjaro
